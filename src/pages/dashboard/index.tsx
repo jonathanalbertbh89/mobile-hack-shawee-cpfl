@@ -36,12 +36,14 @@ const Dashboar: React.FC = () => {
 
     return(
         <View style={style.container}>
-            <TextInput 
-                placeholder="Eu gostaria de ..."
-                style={style.textInput}
-             >
-                 <Feather name="search" size={24}/>
-             </TextInput>
+            <View style={style.containerSearch}>
+                <TextInput 
+                    style={style.textInputSearch}
+                    placeholder= "Eu preciso de ..."
+                />
+                <Feather name="search" size={22} />
+            </View>
+
 
             <Text style={style.title}>
                 Serviços em destaque
@@ -54,15 +56,16 @@ const Dashboar: React.FC = () => {
                 numColumns={2}
                 renderItem={({item}) => (
                     <View style={[style.containerBottonMenu, {backgroundColor: item.color}]}>
-                        <View style={[style.viewMenu]}>
-                            <Feather name="dollar-sign" color='#fff' size={20}/>
-                            <RectButton
-                                    onPress={item.function}
-                                >
-                                <Feather name="arrow-right" color='#fff' size={20}/>
-                            </RectButton>
-                            
-                        </View>
+                            <View style={[style.viewMenu]}>
+                                <Feather name="dollar-sign" color='#fff' size={30}/>
+                                <RectButton
+                                        style={style.buttonInButtonMenu}
+                                        onPress={item.function}
+                                    >
+                                    <Feather name="arrow-right" color='#fff' size={30}/>
+                                </RectButton>
+                                
+                            </View>
                         <Text style={style.textButtonMenu}>{item.text}</Text>
                     </View>
                 )}

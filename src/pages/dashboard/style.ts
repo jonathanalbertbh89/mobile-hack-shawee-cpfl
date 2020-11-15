@@ -7,21 +7,30 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
 
-    textInput:{
-        width: '85%',
-        height: 55,
+    containerSearch:{
+        width: '90%',
+        height: 40,
 
-        borderRadius: 10,
+        marginTop: 35,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: 5,
 
-        borderColor: '#a6a6a6',
-        borderBottomWidth: 2,
-        borderLeftWidth: 2,
-        borderTopWidth: 2,
-        borderRightWidth: 2,
+        borderBottomWidth: 1,
+        borderLeftWidth: 1,
+        borderTopWidth: 1,
+        borderRightWidth: 1,
 
-        marginTop: 35
-        
+        borderRadius: 10
     },
+
+    textInputSearch:{
+        width: '90%',
+        height: 60
+    },
+
+  
 
     title: {
         fontSize: 25, 
@@ -31,22 +40,14 @@ const styles = StyleSheet.create({
 
     containerFlatList:{
         marginTop: 50,
-        width: '80%',
+        width: '90%',
         
         padding: 15,
-
-        
-        borderBottomWidth: 2,
-        borderLeftWidth: 2,
-        borderTopWidth: 2,
-        borderRightWidth: 2,
-
-       
     },
 
     containerBottonMenu:{
-        width: 120,
-        height:120,
+        width: 150,
+        height:150,
         borderRadius: 10,
 
         alignItems: 'center',
@@ -54,7 +55,7 @@ const styles = StyleSheet.create({
 
         backgroundColor: 'red',
 
-        padding: 10,
+        padding: 8,
         margin: 10
 
        
@@ -62,14 +63,32 @@ const styles = StyleSheet.create({
 
     textButtonMenu:{
         color: '#fff',
-        textAlign: 'center'
+        textAlign: 'justify',
+        justifyContent: 'center',
+        marginBottom: 20,
+        fontSize: 17,
+        marginLeft: 8
     },
 
     viewMenu:{
+        flex:1,
         flexDirection: 'row',
+        alignItems: 'flex-start',
         justifyContent: 'space-between',
-        marginBottom: 10
+        marginTop: 10
     },
+
+    buttonInButtonMenu:{
+        marginLeft: 45
+    },
+
+
+    picker:{
+        width: '90%',
+        height: 50,
+
+        
+    }
 
 
 })
