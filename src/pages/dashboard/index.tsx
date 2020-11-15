@@ -26,7 +26,7 @@ const Dashboar: React.FC = () => {
 
     const data = [
         {id: "00", text: 'Previsão de gasto e Orçamento', color: '#FF0000', function: handleSpending},
-        {id: "01", text: 'Falta de energia', color: '#80C342',function: handleSpending},
+        {id: "01", text: 'Falta de energia', color: '#80C342', function: handleLackOfEnergy},
         {id: "02", text: 'Duvidas e reclamações', color: '#00ADE0', function: handleDoubtsComplaints},
         {id: "03", text: 'Religar Energia', color: '#F68C1F', function: handleReconnectPower},
     
