@@ -29,17 +29,19 @@ const styles = StyleSheet.create({
         marginTop: 20
     },
 
-    containerScrollView:{
+    containerFlatList:{
         marginTop: 50,
-        width: '90%',
-        padding: 10,
+        width: '80%',
         
-        
+        padding: 15,
 
+        
         borderBottomWidth: 2,
         borderLeftWidth: 2,
         borderTopWidth: 2,
         borderRightWidth: 2,
+
+       
     },
 
     containerBottonMenu:{
@@ -52,7 +54,8 @@ const styles = StyleSheet.create({
 
         backgroundColor: 'red',
 
-        padding: 10
+        padding: 10,
+        margin: 10
 
        
     },
