@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
 
         width: '100%',
-        height: 60,
+        height: 85,
 
         backgroundColor: '#00ade1'
     },
