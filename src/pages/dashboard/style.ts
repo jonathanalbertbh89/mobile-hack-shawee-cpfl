@@ -46,8 +46,8 @@ const styles = StyleSheet.create({
     },
 
     containerBottonMenu:{
-        width: 150,
-        height:150,
+        width: 145,
+        height:145,
         borderRadius: 10,
 
         alignItems: 'center',

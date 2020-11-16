@@ -15,7 +15,7 @@ const Dashboar: React.FC = () => {
         navigation.navigate('Spending')
     }
     function handleLackOfEnergy(){
-        navigation.navigate('LackOfEnergy')
+        navigation.navigate('LackOfEnergyPage1')
     }
     function handleDoubtsComplaints(){
         navigation.navigate('DoubtsComplaints')
@@ -25,10 +25,10 @@ const Dashboar: React.FC = () => {
     }
 
     const data = [
-        {id: "00", text: 'Previsão de gasto e Orçamento', color: '#FF0000', function: handleSpending},
-        {id: "01", text: 'Falta de energia', color: '#80C342', function: handleLackOfEnergy},
-        {id: "02", text: 'Duvidas e reclamações', color: '#00ADE0', function: handleDoubtsComplaints},
-        {id: "03", text: 'Religar Energia', color: '#F68C1F', function: handleReconnectPower},
+        {id: "00", icons: 'dollar-sign', text: 'Previsão de gasto e Orçamento', color: '#FF0000', function: handleSpending},
+        {id: "01", icons: 'activity', text: 'Falta de energia', color: '#80C342', function: handleLackOfEnergy},
+        {id: "02", icons: 'thumbs-up', text: 'Duvidas e reclamações', color: '#00ADE0', function: handleDoubtsComplaints},
+        {id: "03", icons: 'repeat', text: 'Religar Energia', color: '#F68C1F', function: handleReconnectPower},
     
         ]   
 
@@ -57,7 +57,7 @@ const Dashboar: React.FC = () => {
                 renderItem={({item}) => (
                     <View style={[style.containerBottonMenu, {backgroundColor: item.color}]}>
                             <View style={[style.viewMenu]}>
-                                <Feather name="dollar-sign" color='#fff' size={30}/>
+                                <Feather name= {item.icons} color='#fff' size={30}/>
                                 <RectButton
                                         style={style.buttonInButtonMenu}
                                         onPress={item.function}
